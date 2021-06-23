@@ -176,8 +176,6 @@ module.exports = (_, args) => {
                 join: (_rul_uri, _rul_base) => {
                   // args must be included
                   return (arg) => {
-                    console.log('JOIN')
-                    console.log(arg)
                     // ArcGISPlugin copies assets and cannot be resolved when using api sass
                     // replace relative path with absolute path in `dist` so files can be found for resolving
                     return arg.bases.value.includes('@arcgis/core')
